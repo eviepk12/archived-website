@@ -11,6 +11,8 @@
 body {
     background: var(--white);
     padding: 20px;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .container {

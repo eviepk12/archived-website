@@ -14,6 +14,8 @@ body {
     background-color: var(--darkblue);
     color: white;
     font-size: 22px;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .container {
@@ -54,6 +56,10 @@ span{
 
 h4 {
     color: var(--yellow);
+}
+
+.social {
+    color: white;
 }
 
 .cards-container {

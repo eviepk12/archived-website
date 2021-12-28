@@ -8,6 +8,8 @@
 body {
     background-color: var(--light-beige);
     margin: 0;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .container {
@@ -20,6 +22,8 @@ header {
     display: grid;
     grid-column: 2/3;
     place-items: center;
+
+    font-size: 2em;
 }
 
 .calculator {
