@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Caesar's Script Website</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <header>
+            <h1>Caesar's Cipher</h1>
+        </header>
+
+        <div class="originalContainer">
+            <label for="original">Kalimat Awal</label>
+            <input id="original" type="text" value="hello">
+        </div>
+
+        <div class="shiftContainer">
+            <label for="shift">Penggeseran</label>
+            <input id="shift" type="number" value="2" placeholder="0" max="26" min="-26">
+        </div>
+
+        <div class="encryptedContainer">
+            <hr>
+            <label for="encrypted">Kalimat Akhir</label>
+            <input id="encrypted" type="text" value="" readonly>
+        </div>
+
+        <a class="ghost" href="../index.html">
+            <img id="ghost" src="https://cdn.discordapp.com/attachments/777542191031255040/923797199857532978/Sprite-0003.gif" alt="cute ghost">
+        </a>
+
+    </div>
+
+    <script src="encryption.js"></script>
+
+</body>
+</html>

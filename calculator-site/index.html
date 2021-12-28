@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator Website</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <header>
+        <h1>Calculator</h1>
+        </header>
+
+        <form name="calculator" class="calculator">
+            <input id="display" type="text" name="display" readonly>
+ 
+            <input id="num7" type="button" value="7" onclick="calculator.display.value += '7'">
+            <input id="num8" type="button" value="8" onclick="calculator.display.value += '8'">
+            <input id="num9" type="button" value="9" onclick="calculator.display.value += '9'">
+            <input id="plus" type="button" value="+" onclick="calculator.display.value += ' + '">
+            <br>
+            <input id="num4" type="button" value="4" onclick="calculator.display.value += '4'">
+            <input id="num5" type="button" value="5" onclick="calculator.display.value += '5'">
+            <input id="num6" type="button" value="6" onclick="calculator.display.value += '6'">
+            <input id="minus" type="button" value="-" onclick="calculator.display.value += ' - '">
+            <br>
+            <input id="num1" type="button" value="1" onclick="calculator.display.value += '1'">
+            <input id="num2" type="button" value="2" onclick="calculator.display.value += '2'">
+            <input id="num3" type="button" value="3" onclick="calculator.display.value += '3'">
+            <input id="multiply" type="button" value="x" onclick="calculator.display.value += ' * '">
+            <br>
+            <input id="delete" class="button" type="button" value="C" onclick="calculator.display.value = ''">
+            <input id="num0" type="button" value="0" onclick="calculator.display.value += '0'">
+            <input id="calc" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+            <input id="divide" type="button" value="/" onclick="calculator.display.value += ' / '">
+             <br>
+        </form>
+
+        <a class="ghost" href="../index.html">
+            <img id="ghost" src="https://cdn.discordapp.com/attachments/777542191031255040/923797199857532978/Sprite-0003.gif" alt="cute ghost">
+        </a>
+
+    </div>
+
+</body>
+</html>

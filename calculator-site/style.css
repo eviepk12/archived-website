@@ -1,0 +1,118 @@
+* {
+    --light-beige: #F4E9E1;
+    --pine: #6C9A8B;
+    --pink: #E8998D;
+    --light-pink: #EED2CC;
+}
+
+body {
+    background-color: var(--light-beige);
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 30% 1fr;
+    grid-template-rows: 1fr 250px 250px auto;
+}
+
+header {
+    display: grid;
+    grid-column: 2/3;
+    place-items: center;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat (4, 22%);
+
+    grid-template-areas: 
+    "display  display  display display"
+    "num9     num8     num7    plus"
+    "num6     num5     num4    minus"
+    "num3     num2     num1    multiply"
+    "num0     div      calc    delete";
+
+    grid-column: 2/3;
+    grid-row: 2/4;
+    background-color: var(--light-pink);
+    margin: 50px;
+    padding: 18px;
+    grid-gap: 2px;
+}
+
+#display {
+    grid-area: display;
+}
+
+#num9 {
+    grid-area: num9;
+}
+
+#num8 {
+    grid-area: num8;
+}
+
+#num7 {
+    grid-area: num7;
+}
+
+#plus {
+    grid-area: plus;
+}
+
+#num6 {
+    grid-area: num6;
+}
+
+#num5 {
+    grid-area: num5;
+}
+
+#num4 {
+    grid-area: num4;
+}
+
+#minus {
+    grid-area: minus;
+}
+
+#num3 {
+    grid-area: num3;
+}
+
+#num2 {
+    grid-area: num2;
+}
+
+#num1 {
+    grid-area: num1;
+}
+
+#multiply {
+    grid-area: multiply;
+}
+
+#num0 {
+    grid-area: num0;
+}
+
+#divide {
+    grid-area: div;
+}
+
+#calc {
+    grid-area: calc;
+}
+
+#delete {
+    grid-area: delete;
+}
+
+.ghost {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    display: grid;
+    place-items: center;
+}
