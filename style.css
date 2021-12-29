@@ -36,6 +36,9 @@ header {
     display: grid;
     place-items: center;
 }
+#mon {
+    max-width: 100%;
+}
 
 main {
     grid-area: main;
@@ -67,7 +70,7 @@ h4 {
     display: grid;
     grid-gap: 2em;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    margin: 150px;
+    padding: 8% 20% 5% 20%;
 }
 
 .card-image {
