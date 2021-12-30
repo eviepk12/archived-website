@@ -46,7 +46,7 @@ main {
     padding: 100px 5vw;
 }
 .about-me {
-    margin: 10%;
+    margin: 5%;
 }
 span{
     color: var(--yellow);
@@ -101,4 +101,12 @@ footer {
     font-size: 20px;
     display: grid;
     place-items: center;
+}
+
+@media only screen and (max-width: 1366px) {
+    header {
+        grid-area: header;
+        height: 100vh;
+        margin-bottom: 18vh;
+    }
 }
