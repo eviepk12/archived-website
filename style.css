@@ -70,7 +70,7 @@ h4 {
     display: grid;
     grid-gap: 2em;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    padding: 8% 20% 5% 20%;
+    padding: 8% 10% 5% 10%;
 }
 
 .card-image {
@@ -88,6 +88,12 @@ h4 {
 }
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2);
+}
+
+#cardSvg {
+    display: grid;
+    place-items: center;
+    margin: 10% 0 20%;
 }
 
 footer {
