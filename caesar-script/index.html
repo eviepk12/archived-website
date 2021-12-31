@@ -23,7 +23,7 @@
 
         <div class="shiftContainer">
             <label for="shift">Penggeseran</label>
-            <input id="shift" type="number" value="2" placeholder="0" max="26" min="-26">
+            <input id="shift" type="number" onkeypress="return onlyNumberKey(event)" value="2" placeholder="0" max="26" min="-26">
         </div>
 
         <div class="encryptedContainer">
