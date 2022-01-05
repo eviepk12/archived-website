@@ -1,0 +1,94 @@
+* {
+    --white: #fbf5ef;
+    --yellow: #f2d3ab;
+    --pink: #c69fa5;
+    --purple: #8b6d9c;
+    --blue: #494d7e;
+    --darkblue: #272744;
+    --darkGray: #A2A2A2;
+}
+
+body {
+    background: var(--white);
+    padding: 20px;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+    "header"
+    "original"
+    "shift"
+    "encrypted"
+    "ghost";
+    grid-gap: 1em;
+}
+
+header {
+    color: var(--yellow);
+    border-bottom: 5px solid var(--pink);
+    padding: 20px;
+    font-size: 2em;
+    font-weight: 100;
+    grid-area: header;
+    display: grid;
+    place-items: center;
+}
+
+.originalContainer {
+    grid-area: original;
+}
+
+.customOption {
+    grid-area: shift;
+    display: grid;
+}
+
+.encryptedContainer {
+    grid-area: encrypted;
+}
+
+.ghost {
+    grid-area: ghost;
+    display: grid;
+    place-items: center;
+}
+
+label {
+    margin: 10px;
+    color: var(--darkGray);
+}
+
+input {
+    font-size: 2em;
+    padding: 10px;
+    font-weight: 100;
+    border: 3px solid gray;
+    margin: 20px;
+    width: calc(100% - 65px);
+}
+
+select {
+    
+}
+
+#encrypted {
+    border-color: black;
+    background-color: black;
+    color: white;
+}
+
+hr {
+    border: 1px solid var(--pink);
+    margin: 50px 0px;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        margin-left: 25vw;
+        margin-right: 25vw;
+    }
+}

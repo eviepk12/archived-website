@@ -1,0 +1,112 @@
+* {
+    --white: #fbf5ef;
+    --blue: #3B5DC9;
+    --darkBlue: #29366F;
+    --yellow: #ffcd75;
+    --black: #333c57;
+
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--blue);
+    color: black;
+    font-size: 22px;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "header"
+    "main"
+    "cards"
+    "footer";
+}
+
+header {
+    grid-area: header;
+    height: 100vh;
+}
+.moonContainer {
+    display: grid;
+    place-items: center;
+}
+#mon {
+    max-width: 100%;
+}
+
+main {
+    grid-area: main;
+    background-color: var(--white);
+    padding: 100px 5vw;
+}
+.about-me {
+    margin: 5%;
+}
+span{
+    color: var(--yellow);
+}
+#ghost {
+    float: left;
+    width: 80px;
+    shape-outside: circle();
+}
+
+h4 {
+    color: var(--yellow);
+}
+
+.social {
+    color: white;
+}
+
+.cards-container {
+    grid-area: cards;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 8% 10% 5% 10%;
+    color: white;
+}
+
+.card-image {
+    width: 100%;
+}
+
+.card {
+    border-radius: .3em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    background-color: var(--black);
+    margin: 20px;
+    padding: 20px;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2);
+}
+
+#cardSvg {
+    display: grid;
+    place-items: center;
+    margin: 10% 0 20%;
+}
+
+footer {
+    grid-area: footer;
+    font-size: 20px;
+    display: grid;
+    place-items: center;
+}
+
+@media only screen and (max-width: 1366px) {
+    header {
+        grid-area: header;
+        height: 100vh;
+        margin-bottom: 18vh;
+    }
+}

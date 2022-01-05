@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Caesar's Script Website</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <header>
+            <h1>Caesar's Cipher</h1>
+        </header>
+
+        <div class="originalContainer">
+            <label for="original"></label>
+            <input id="original" onkeypress="return onlyNumberKey(event)" type="text" value="">
+        </div>
+
+        <div class="customOption">
+            <label for="options">From</label>
+
+            <select>
+                <option value="0">Decimal</option>
+            </select>
+
+            <label for="options">To</label>
+            
+            <select>
+                <option value="1">Binary</option>
+            </select>
+        </div>
+
+        <div class="encryptedContainer">
+            <hr>
+            <label for="encrypted">Kalimat Akhir</label>
+            <input id="encrypted" type="text" value="" readonly>
+        </div>
+
+        <a class="ghost" href="../index.html">
+            <img id="ghost" src="https://cdn.discordapp.com/attachments/777542191031255040/923797199857532978/Sprite-0003.gif" alt="cute ghost">
+        </a>
+
+    </div>
+
+    <script src="encryption.js"></script>
+
+</body>
+</html>

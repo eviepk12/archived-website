@@ -1,6 +1,6 @@
 * {
     --white: #fbf5ef;
-    --yellow: #f2d3ab;
+    --yellow: #ffcd75;
     --pink: #c69fa5;
     --purple: #8b6d9c;
     --blue: #494d7e;
@@ -32,7 +32,7 @@ header {
     grid-area: header;
     height: 100vh;
 }
-.moon {
+.moonContainer {
     display: grid;
     place-items: center;
 }

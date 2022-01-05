@@ -13,22 +13,22 @@
     <meta name="author" content="Made by Zainal">
     <meta name="theme-color" content="#272744"> 
     <script src="https://kit.fontawesome.com/e4d4ff6de1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link id="theme" rel="stylesheet" href="dark.css">
     <title>Eve's Corner - Short portfolio</title>
 </head>
 <body>
 
     <div class="container">
 
-        <header class="moon">
-            <img id="mon" src="https://cdn.discordapp.com/attachments/777542191031255040/923797199589101618/moon.png" alt="Crescent Moon">
-           
+        <header class="moonContainer">
+            <img onclick="changeTheme(), changeHeader(), changeGhost()" class="images" id="mon" src="https://cdn.discordapp.com/attachments/777542191031255040/923797199589101618/moon.png" alt="Crescent Moon">
+
             <a class="social" href="https://github.com/eviepk12" target="_blank" alt="button to go to github"> <i class="fab fa-github fa-3x"></i> </a>
         </header>
 
         <main>
             <p class="about-me">
-                <img src="https://cdn.discordapp.com/attachments/777542191031255040/923797199857532978/Sprite-0003.gif" id="ghost" alt="cute ghost">
+                <img class="images" src="https://cdn.discordapp.com/attachments/777542191031255040/923797199857532978/Sprite-0003.gif" id="ghost" alt="cute ghost">
                 Hi! I'm a beginner <span>webdeveloper and programmer.</span> I'm interested in  computer science as a career path, and I'm interested to explore the field in the future. Currently I'm
                 working on <span>HTML, JavaScript, Java, Python, and C++.</span>
                 <br>
@@ -68,6 +68,8 @@
         <footer>
             <p>Made with 💛 by Zainal</p>
         </footer>
+
+        <script src="changeTheme.js"></script>
     </div>
 
 </body>
