@@ -1,10 +1,11 @@
-function decToBinary(n, base) {
-    if (n < 0) {
-        n = 0xFFFFFFFF + n + 1;
-    }
+function decToBHO(n, base) {
 
-    switch (base) {
-        
+    if (n < 0) {
+      n = 0xFFFFFFFF + n + 1;
+     } 
+
+    switch (base)  
+    {  
     case 'B':  
     return parseInt(n, 10).toString(2);
     break;  
@@ -15,11 +16,11 @@ function decToBinary(n, base) {
     return parseInt(n, 10).toString(8);
     break;  
     default:  
-    return("Wrong input.........");
-    }
+    return("Wrong input.........");  
+    } 
 }
 
-console.log(decToBinary(5));
+console.log(decToBHO('#original', '.option'))
 
 function onlyNumberKey(evt) {
           

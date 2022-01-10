@@ -63,6 +63,10 @@ h4 {
 
 .social {
     color: white;
+    transition-duration: 0.4s;
+}
+.social:hover {
+    color: black;
 }
 
 .cards-container {

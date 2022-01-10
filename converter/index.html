@@ -18,20 +18,22 @@
 
         <div class="originalContainer">
             <label for="original"></label>
-            <input id="original" onkeypress="return onlyNumberKey(event)" type="text" value="">
+            <input id="original" onkeypress="return onlyNumberKey(event)" type="number" value="">
         </div>
 
         <div class="customOption">
-            <label for="options">From</label>
+            <label>From</label>
 
             <select>
-                <option value="0">Binary</option>
+                <option>Decimal</option>
             </select>
 
-            <label for="options">To</label>
+            <label>To</label>
             
             <select>
-                <option value="1">Decimal</option>
+                <option class="option" value="B">Binary</option>
+                <option class="option" value="H">Hexadecimal</option>
+                <option class="option" value="O">Octadecimal</option>
             </select>
         </div>
 

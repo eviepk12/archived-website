@@ -17,11 +17,12 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(6, auto);
     grid-template-areas: 
     "header"
     "original"
     "shift"
+    "buttonRefresh"
     "encrypted"
     "ghost";
     grid-gap: 1em;
@@ -68,6 +69,20 @@ input {
     border: 3px solid gray;
     margin: 20px;
     width: calc(100% - 65px);
+}
+
+button {
+    font-size: 20px;
+    border: none;
+    text-align: center;
+    background-color: var(--darkblue);
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
+button:hover {
+    background-color: var(--pink);
 }
 
 #encrypted {

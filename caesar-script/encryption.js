@@ -61,3 +61,7 @@ function onlyNumberKey(evt) {
         return false;
     return true;
 }
+
+function refreshPage() {
+    window.location.reload();
+}
