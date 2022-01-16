@@ -1,3 +1,6 @@
+/* Simple javascript to change the theme in the website */
+/* Made by Enal */
+
 function changeTheme() {
     var theme = document.getElementsByTagName('link')[0];
 
