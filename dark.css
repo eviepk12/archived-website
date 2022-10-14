@@ -20,11 +20,12 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
     grid-template-areas: 
     "header"
     "main"
     "cards"
+    "blog"
     "footer";
 }
 
@@ -77,6 +78,10 @@ h4 {
     padding: 8% 10% 5% 10%;
 }
 
+.blog {
+    background-color: var(--blue);
+}
+
 .card-image {
     width: 100%;
 }
@@ -105,6 +110,13 @@ footer {
     font-size: 20px;
     display: grid;
     place-items: center;
+}
+
+.blog-container {
+    background-color: var(--blue);
+    display: grid;
+    place-items: center;
+    padding: 5% 0% 5% 0%;
 }
 
 @media only screen and (max-width: 1366px) {
